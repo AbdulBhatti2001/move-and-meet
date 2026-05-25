@@ -104,6 +104,14 @@ const required = [
   'components/ui/button.tsx',
   'components/ui/container.tsx',
   'components/ui/section-header.tsx',
+  'components/sections/index.ts',
+  'components/sections/hero.tsx',
+  'components/sections/pillars-band.tsx',
+  'components/sections/site-header.tsx',
+  'components/sections/site-footer.tsx',
+  'components/sections/mobile-nav.tsx',
+  'components/sections/language-switcher.tsx',
+  'components/motion/reveal.tsx',
   'lib/shared/cn.ts',
   'lib/shared/index.ts',
   'lib/shared/image-loader.ts',
@@ -204,7 +212,8 @@ if (!existsSync('node_modules')) {
 
   runNodeTool('typecheck', 'typescript/bin/tsc', ['--noEmit']);
   runNodeTool('lint', 'next/dist/bin/next', ['lint', '--no-cache']);
-  runNodeTool('validate:content', 'tsx/dist/cli.mjs', ['scripts/validate-content.ts']);
+  // tsx 4.x exposes `.` in its package exports map; resolve via package name.
+  runNodeTool('validate:content', 'tsx', ['scripts/validate-content.ts']);
 }
 
 // ── Summary ─────────────────────────────────────────────────────────────────

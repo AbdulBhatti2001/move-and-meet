@@ -2,9 +2,9 @@
 
 > Lebendes Briefing. Wird nach jedem Sprint aktualisiert. Enthält aktuellen Stand, Architekturentscheidungen (via ADR-Links), Sprint-Status und offene Fragen.
 
-**Letztes Update**: 2026-05-25 (Sprint 1 Implementation fertig, wartet auf Smoke-Tests + Merge)
-**Aktueller Sprint**: 1 (Design System & Tokens)
-**Sprint-Status**: Files auf Branch `feat/design-system-foundation`, lokale Tests offen
+**Letztes Update**: 2026-05-25 (Sprint 1 gemerged auf main, Sprint 2 in Arbeit)
+**Aktueller Sprint**: 2 (Hero & Navigation)
+**Sprint-Status**: Files auf Branch `feat/hero-navigation`, lokale Tests offen
 
 ---
 
@@ -180,6 +180,15 @@ Vor jedem Merge in `main`:
 - **Branch**: `main` (protected nach Sprint 7)
 - **Branch-Strategie**: Trunk-based, `feat/*`, `fix/*`, `chore/*`, Squash-Merge
 - **Commits**: Conventional Commits, enforced via commitlint + husky
+
+## 11a. Sprint 2 Log
+
+- 2026-05-25 — Branch `feat/hero-navigation` aufgesetzt. Sprint 1 PR auf `main` gemerged, CF Production Worker live.
+- 2026-05-25 — Frontend + Motion + Content-i18n Bundle: `components/motion/reveal.tsx` (Framer-Motion-Wrapper mit `prefers-reduced-motion`), `components/sections/{site-header,site-footer,hero,pillars-band,mobile-nav,language-switcher}.tsx` + Barrel. Hero ist typography-driven mit Radial-Gradient (Pexels-Bild kommt Sprint 4). PillarsBand mit Lucide-Icons (`Footprints`, `Users`, `Heart`) und Reveal-Stagger. SiteHeader sticky mit Backdrop-Blur, Mobile-Drawer mit body-scroll-lock + ESC-Close. LanguageSwitcher swappt Locale via `useRouter.replace(pathname, { locale })`. SiteFooter mit `/rechtliches`-Link (Owner-Name nicht hier per Name-Minimierung).
+- 2026-05-25 — Layout extended: `app/[locale]/layout.tsx` rendert SiteHeader + `<main>` + SiteFooter. `app/[locale]/page.tsx` reduziert auf `<Hero /> + <PillarsBand />`.
+- 2026-05-25 — `messages/{de,en}.json` ergänzt um `Navigation`, `LanguageSwitcher`, `Hero`, `Pillars`, `Footer` Namespaces (parity 23 Keys).
+- 2026-05-25 — `lucide-react ^0.469.0` als Dependency.
+- **Pending**: Owner führt `pnpm install` (für lucide-react), `pnpm check`, Smoke-Tests, Commit + Push.
 
 ## 12. Sprint 1 Log
 

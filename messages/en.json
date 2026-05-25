@@ -10,14 +10,40 @@
     "community": "Community",
     "faq": "FAQ",
     "join": "Join",
-    "legal": "Legal"
+    "legal": "Legal",
+    "menu": "Open menu",
+    "close": "Close menu"
   },
-  "HomePage": {
+  "LanguageSwitcher": {
+    "label": "Switch language",
+    "de": "DE",
+    "en": "EN"
+  },
+  "Hero": {
+    "eyebrow": "Movement · Connection · Sisterhood",
     "title": "Move & Meet",
-    "subtitle": "Movement · Connection · Sisterhood",
-    "intro": "This site is being built. Coming soon: hikes, runs, pilates, and a community of strong women with soft hearts."
+    "subtitle": "Hikes, runs, pilates. A community of strong women with soft hearts in Switzerland.",
+    "ctaPrimary": "Join the community",
+    "ctaSecondary": "Upcoming events"
+  },
+  "Pillars": {
+    "eyebrow": "What carries us",
+    "heading": "Three pillars",
+    "movement": {
+      "title": "Movement",
+      "body": "Hiking, running, pilates, strength. Movement as a given."
+    },
+    "connection": {
+      "title": "Connection",
+      "body": "Real encounters. Conversations that go deeper. Matcha after."
+    },
+    "sisterhood": {
+      "title": "Sisterhood",
+      "body": "Strong women. Soft hearts. Active deen. A community that holds."
+    }
   },
   "Footer": {
+    "tagline": "Movement · Connection · Sisterhood",
     "rights": "All rights reserved",
     "legal": "Legal"
   }
