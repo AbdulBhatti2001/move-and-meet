@@ -1,6 +1,6 @@
 # Cloudflare Workers configuration for Move & Meet.
 # The site is deployed as a Worker built by @opennextjs/cloudflare.
-# See ADR-0003 for context (revised 2026-05-25: OpenNext / Workers).
+# See ADR-0003 for context.
 
 name = "move-and-meet"
 main = ".open-next/worker.js"
@@ -13,6 +13,14 @@ compatibility_flags = ["nodejs_compat"]
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
+
+# Wrangler runs this command before any deploy / versions upload.
+# It produces the .open-next/ output the [assets] and `main` settings above
+# point at. Keeping it here (rather than only in package.json) means the
+# Cloudflare Workers Builds pipeline gets the OpenNext step automatically,
+# regardless of what the dashboard's Build/Deploy command fields contain.
+[build]
+command = "pnpm exec opennextjs-cloudflare build"
 
 # Production environment variables are managed in the Cloudflare dashboard.
 # Local development uses .env.local (git-ignored).
