@@ -2,9 +2,9 @@
 
 > Lebendes Briefing. Wird nach jedem Sprint aktualisiert. Enthält aktuellen Stand, Architekturentscheidungen (via ADR-Links), Sprint-Status und offene Fragen.
 
-**Letztes Update**: 2026-05-25 (Sprint 1 gemerged auf main, Sprint 2 in Arbeit)
-**Aktueller Sprint**: 2 (Hero & Navigation)
-**Sprint-Status**: Files auf Branch `feat/hero-navigation`, lokale Tests offen
+**Letztes Update**: 2026-05-25 (Sprint 2 live + Hotfix, Sprint 3 Implementation fertig)
+**Aktueller Sprint**: 3 (Events Display)
+**Sprint-Status**: Files auf Branch `feat/events-display`, lokale Tests offen
 
 ---
 

@@ -42,6 +42,48 @@
       "body": "Strong women. Soft hearts. Active deen. Eine Community die trägt."
     }
   },
+  "Events": {
+    "eyebrow": "Kommende Aktivitäten",
+    "title": "Events",
+    "subtitle": "Unsere kommenden Hikes, Runs, Pilates Sessions und Matcha Dates. Anmeldung über WhatsApp oder Instagram.",
+    "upcoming": "Kommende Events",
+    "past": "Vergangene Events",
+    "noUpcoming": "Aktuell sind keine Events geplant. Folge uns auf Instagram damit du nichts verpasst.",
+    "backToList": "Zurück zur Übersicht",
+    "featured": {
+      "eyebrow": "Als nächstes",
+      "heading": "Komm vorbei",
+      "cta": "Details ansehen"
+    },
+    "meta": {
+      "date": "Datum",
+      "duration": "Dauer",
+      "meetingPoint": "Treffpunkt",
+      "difficulty": "Niveau"
+    },
+    "detail": {
+      "joinHeading": "Dabei sein",
+      "joinIntro": "Wir koordinieren über WhatsApp und Instagram. Schreib uns, wir freuen uns auf dich.",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "map": "Karte öffnen"
+    },
+    "activity": {
+      "hiking": "Hiking",
+      "running": "Running",
+      "walking": "Walking",
+      "pilates": "Pilates",
+      "strength": "Strength",
+      "sup": "Standup Paddling",
+      "matcha": "Matcha Date",
+      "other": "Aktivität"
+    },
+    "difficulty": {
+      "easy": "Leicht",
+      "moderate": "Mittel",
+      "challenging": "Anspruchsvoll"
+    }
+  },
   "Footer": {
     "tagline": "Movement · Connection · Sisterhood",
     "rights": "Alle Rechte vorbehalten",

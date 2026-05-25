@@ -1,0 +1,23 @@
+{
+  "slug": "pilates-sunrise-zurichsee-2026-08-23",
+  "title": {
+    "de": "Pilates Sunrise am Zürichsee",
+    "en": "Pilates Sunrise at Lake Zürich"
+  },
+  "description": {
+    "de": "60 Minuten Mat Pilates direkt am See. Fokus auf Atmung, Mitte und Beweglichkeit. Bring deine Matte mit, danach Matcha gemeinsam am Wasser.",
+    "en": "60 minutes of mat pilates right by the lake. Focus on breath, centre, and mobility. Bring your own mat; matcha together by the water afterwards."
+  },
+  "date": "2026-08-23T07:00:00+02:00",
+  "duration_minutes": 60,
+  "location": {
+    "name": "Zürich",
+    "meeting_point": {
+      "de": "Mythenquai, Wiese bei der Badi",
+      "en": "Mythenquai, lawn by the lake pool"
+    }
+  },
+  "difficulty": "easy",
+  "activity": "pilates",
+  "cancelled": false
+}
