@@ -2,9 +2,9 @@
 
 > Lebendes Briefing. Wird nach jedem Sprint aktualisiert. Enthält aktuellen Stand, Architekturentscheidungen (via ADR-Links), Sprint-Status und offene Fragen.
 
-**Letztes Update**: 2026-05-25 (Sprint-0 Repo-Skelett fertig)
-**Aktueller Sprint**: 0 (Discovery & Foundation) — wartet auf lokales `pnpm install` und ersten Commit
-**Sprint-Status**: alle Files geschrieben, Owner führt Setup-Befehle aus SETUP.md aus
+**Letztes Update**: 2026-05-25 (Sprint 1 Implementation fertig, wartet auf Smoke-Tests + Merge)
+**Aktueller Sprint**: 1 (Design System & Tokens)
+**Sprint-Status**: Files auf Branch `feat/design-system-foundation`, lokale Tests offen
 
 ---
 
@@ -157,7 +157,7 @@ Diese Funktionen wurden in Phase 1 bewusst ausgelassen und können reaktiviert w
 - **Eigene Mail-Domain** `hello@movemeet.ch` mit SPF/DKIM/DMARC via Resend
 - **Cloudflare Images** ($5/Monat) wenn Build-Time Image-Pipeline an Grenzen kommt
 - **Optionales CMS**: Sanity, Payload, oder Cloudflare-native (Pages CMS) für Aysin/Michelle ohne PR-Workflow
-- **OpenNext-Migration**: `@cloudflare/next-on-pages` ist als deprecated markiert. Migration auf `@opennextjs/cloudflare` im Sprint 7 (CI/CD) wenn die Deploy-Pipeline ohnehin überarbeitet wird. Aktuell funktional, aber tech debt.
+- ~~OpenNext-Migration~~: erledigt im Sprint 1 (vorgezogen wegen CF Workers Builds Default-Flow), siehe Sprint-1-Log.
 - **next-intl 4.x Upgrade**: Aktuell 3.26 für API-Stabilität in Sprint 0. Upgrade auf 4.x sinnvoll wenn neue 4-only Features (z.B. eingebaute `hasLocale`, verbesserte Type-Safety) gebraucht werden.
 
 ## 10. Quality Gates (nicht verhandelbar)
@@ -181,7 +181,18 @@ Vor jedem Merge in `main`:
 - **Branch-Strategie**: Trunk-based, `feat/*`, `fix/*`, `chore/*`, Squash-Merge
 - **Commits**: Conventional Commits, enforced via commitlint + husky
 
-## 12. Sprint 0 Log
+## 12. Sprint 1 Log
+
+- 2026-05-25 — Branch `feat/design-system-foundation` erstellt. Parallel: Cloudflare Pages Setup via Owner.
+- 2026-05-25 — Design-System-Agent liefert: `components/ui/{button,container,section-header}.tsx` + Barrel `index.ts`. Alle drei sind server-component-safe, React-19-Stil (ref-as-prop für Button), nutzen ausschliesslich Brand-Tokens, `cn()`-Helper aus `lib/shared`.
+- 2026-05-25 — `/[locale]/style-guide` Route mit Layout (noindex/nofollow), Page mit Color-Swatches, Typo-Scale, Button-Variants/Sizes/States, SectionHeader-Beispielen, Container-Sizes. Production-Guard via `NODE_ENV` Check (`notFound()` in prod).
+- 2026-05-25 — `app/[locale]/page.tsx` refactored: nutzt jetzt `Container as="main"` + `SectionHeader level={1}` mit `align="center"`, eyebrow/title/subtitle aus Translations.
+- 2026-05-25 — `docs/design-system.md` mit Token-Tabelle (Color, Typo, Motion), Layout-Regeln, Primitive-API für Container/Button/SectionHeader, Composition-Rules, "Adding a new primitive" Workflow.
+- 2026-05-25 — Owner Cloudflare-Setup-Befund: neue CF-UI legt Git-connected Projekte als **Workers** an (mit required Deploy command, API token, Version command), nicht als Pages. Erster Build mit `pnpm run build` + `wrangler deploy` läuft bis Build-Success, scheitert dann am Workers-Deploy ("Pages-specific command in a Workers project"). Konsequenz: OpenNext-Migration vorziehen (war Sprint-7-TODO).
+- 2026-05-25 — In-Scope Bundle: Adapter-Swap `@cloudflare/next-on-pages` → `@opennextjs/cloudflare`. Files: `package.json` (deps + scripts: `build:cf`, `preview:cf`, `deploy:cf`), `wrangler.toml` (Workers config mit `main` + `assets`-Binding), neuer `open-next.config.ts`, `README.md` Scripts-Tabelle, `.gitignore` (`.open-next/`), ADR-0003 revidiert (Status: revised again, Decision auf Workers/OpenNext umgeschrieben). Sprint-7-TODO "OpenNext-Migration" wird nicht mehr nötig (jetzt erledigt).
+- **Pending**: Owner führt `pnpm install` (zieht @opennextjs/cloudflare), lokale Smoke-Tests (`pnpm dev`, `pnpm typecheck`, `pnpm lint`, `pnpm build:cf`), Commit + Push, PR auf `main`, Merge. Parallel: CF Dashboard Build/Deploy-Commands auf `pnpm build:cf` / `pnpm deploy:cf` setzen, dann Re-Deploy triggern.
+
+## 13. Sprint 0 Log
 
 - 2026-05-25 — Briefing aufgenommen, Default-Stack vorgeschlagen, Owner-Choices erfasst
 - 2026-05-25 — Repo-Verifikation: lokal git-initialisiert, Remote `origin` zeigt auf GitHub, keine Commits, Branch `main`
@@ -195,4 +206,5 @@ Vor jedem Merge in `main`:
 - 2026-05-25 — pnpm install im Sandbox geblockt (Windows-Mount-Permissions). Owner führt Install lokal in PowerShell aus per SETUP.md Schritt 3.
 - 2026-05-25 — Owner lokal: pnpm install OK (944 Packages, 2m21s), pnpm lint OK. pnpm dev / typecheck / build:cf scheitert an `hasLocale` (next-intl 4-only API, wir haben 3.26), `experimental.typedRoutes` (in 15.5 nach Top-Level gewandert), Top-Level `await` in tsx scripts (CJS-Modus), `engines` zu strikt (Owner hat Node 24).
 - 2026-05-25 — Fix-Patch: eigener `isValidLocale` Type-Guard in `i18n/routing.ts` statt `hasLocale`-Import; `typedRoutes` in next.config.ts auf Top-Level verschoben; beide tsx scripts wrappen Top-Level await in async-IIFE; engines auf `>=20.0.0` relaxed; tokens.css/globals.css aufgeräumt (next/font Variablen umbenannt auf `--font-fraunces/inter/jetbrains-mono`, @theme mappt sauber drauf, keine Self-Refs mehr).
-- **Pending**: Owner re-runs Smoke-Tests (`pnpm dev`, `pnpm typecheck`, `pnpm validate:content`, `pnpm build:cf`). Bei grün: Sprint-0-Gate Approval, dann Sprint 1 (Design System).
+- 2026-05-25 — Smoke-Tests alle grün: `pnpm dev` lädt `/en` (200), typecheck/lint/validate:content clean, `next build` generiert 5 prerendered Pages (de + en). `next-on-pages` Post-Process zeigt Windows-Quirk-Warning, Build selbst bleibt valid. CF-spezifische Validierung wird in CI (Sprint 7) auf Linux gemacht.
+- 2026-05-25 — Initial Commit auf `main` gepusht (HTTPS Remote, 86 Objekte, 162 KiB). Sprint-0-Gate erreicht. Repo: `https://github.com/AbdulBhatti2001/move-and-meet`

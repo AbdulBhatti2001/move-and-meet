@@ -22,25 +22,28 @@ Open <http://localhost:3000>. The site redirects to `/de` or `/en` based on the 
 ## Cloudflare Pages Build
 
 ```bash
-pnpm build:cf       # Build with @cloudflare/next-on-pages adapter
-pnpm preview:cf     # Local preview against the Cloudflare runtime
+pnpm build:cf       # Build with @opennextjs/cloudflare (generates .open-next/)
+pnpm preview:cf     # Local preview against the Cloudflare Workers runtime
+pnpm deploy:cf      # Deploy to Cloudflare Workers (calls wrangler deploy)
 ```
 
 ## Scripts
 
-| Command                 | Purpose                                  |
-| ----------------------- | ---------------------------------------- |
-| `pnpm dev`              | Local dev server                         |
-| `pnpm build`            | Standard Next.js build (for diagnostics) |
-| `pnpm build:cf`         | Cloudflare Pages build                   |
-| `pnpm preview:cf`       | Local preview of the Cloudflare build    |
-| `pnpm lint`             | ESLint                                   |
-| `pnpm typecheck`        | `tsc --noEmit`                           |
-| `pnpm test`             | Vitest unit tests                        |
-| `pnpm test:e2e`         | Playwright end-to-end                    |
-| `pnpm validate:content` | Validate event JSON against Zod schema   |
-| `pnpm process:images`   | Build-time image optimisation (Sharp)    |
-| `pnpm format`           | Prettier write                           |
+| Command                 | Purpose                                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------------------- |
+| `pnpm dev`              | Local dev server                                                                             |
+| `pnpm build`            | Standard Next.js build (for diagnostics)                                                     |
+| `pnpm build:cf`         | Cloudflare Workers build (OpenNext)                                                          |
+| `pnpm preview:cf`       | Local preview of the Cloudflare build                                                        |
+| `pnpm deploy:cf`        | Deploy to Cloudflare Workers                                                                 |
+| `pnpm lint`             | ESLint                                                                                       |
+| `pnpm typecheck`        | `tsc --noEmit`                                                                               |
+| `pnpm test`             | Vitest unit tests                                                                            |
+| `pnpm test:e2e`         | Playwright end-to-end                                                                        |
+| `pnpm validate:content` | Validate event JSON against Zod schema                                                       |
+| `pnpm process:images`   | Build-time image optimisation (Sharp)                                                        |
+| `pnpm check`            | Lightweight health check (file presence, scope guard, i18n parity, typecheck, lint, content) |
+| `pnpm format`           | Prettier write                                                                               |
 
 ## Project Documentation
 
