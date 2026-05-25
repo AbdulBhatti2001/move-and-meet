@@ -10,14 +10,40 @@
     "community": "Community",
     "faq": "FAQ",
     "join": "Beitreten",
-    "legal": "Rechtliches"
+    "legal": "Rechtliches",
+    "menu": "Menü öffnen",
+    "close": "Menü schliessen"
   },
-  "HomePage": {
+  "LanguageSwitcher": {
+    "label": "Sprache wechseln",
+    "de": "DE",
+    "en": "EN"
+  },
+  "Hero": {
+    "eyebrow": "Movement · Connection · Sisterhood",
     "title": "Move & Meet",
-    "subtitle": "Movement · Connection · Sisterhood",
-    "intro": "Diese Site wird gerade gebaut. Bald hier zu sehen: Hikes, Runs, Pilates und eine Community starker Frauen mit weichem Herzen."
+    "subtitle": "Hikes, Runs, Pilates. Eine Community starker Frauen mit weichem Herzen in der Schweiz.",
+    "ctaPrimary": "Community beitreten",
+    "ctaSecondary": "Kommende Events"
+  },
+  "Pillars": {
+    "eyebrow": "Was uns trägt",
+    "heading": "Drei Säulen",
+    "movement": {
+      "title": "Movement",
+      "body": "Hiking, Running, Pilates, Strength. Bewegung als Selbstverständlichkeit."
+    },
+    "connection": {
+      "title": "Connection",
+      "body": "Echte Begegnungen. Gespräche die tiefer gehen. Matcha danach."
+    },
+    "sisterhood": {
+      "title": "Sisterhood",
+      "body": "Strong women. Soft hearts. Active deen. Eine Community die trägt."
+    }
   },
   "Footer": {
+    "tagline": "Movement · Connection · Sisterhood",
     "rights": "Alle Rechte vorbehalten",
     "legal": "Rechtliches"
   }

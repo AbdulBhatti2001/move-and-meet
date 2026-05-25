@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { Fraunces, Inter, JetBrains_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale, getTranslations } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { isValidLocale, routing } from '@/i18n/routing';
+import { SiteFooter, SiteHeader } from '@/components/sections';
 import '@/styles/globals.css';
 
 const fraunces = Fraunces({
@@ -70,7 +71,11 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="text-cream-100 font-body min-h-dvh bg-olive-800 antialiased">
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <SiteHeader />
+          <main id="main">{children}</main>
+          <SiteFooter />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
