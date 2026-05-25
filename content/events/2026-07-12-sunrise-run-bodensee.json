@@ -1,0 +1,23 @@
+{
+  "slug": "sunrise-run-bodensee-2026-07-12",
+  "title": {
+    "de": "Sunrise Run am Bodensee",
+    "en": "Sunrise Run by Lake Constance"
+  },
+  "description": {
+    "de": "Wir starten zum Sonnenaufgang mit einem ruhigen Lauf am Schweizer Ufer des Bodensees. Lockeres Tempo, jede läuft ihren Rhythmus. Danach Kaffee und Croissants im Hafen.",
+    "en": "We meet at sunrise for a calm run along the Swiss shore of Lake Constance. Easy pace, everyone runs her own rhythm. Coffee and croissants by the harbour afterwards."
+  },
+  "date": "2026-07-12T05:30:00+02:00",
+  "duration_minutes": 90,
+  "location": {
+    "name": "Romanshorn",
+    "meeting_point": {
+      "de": "Hafenpromenade, beim Leuchtturm",
+      "en": "Harbour promenade, next to the lighthouse"
+    }
+  },
+  "difficulty": "easy",
+  "activity": "running",
+  "cancelled": false
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "matcha-walk-limmat-2026-09-19",
+  "title": {
+    "de": "Matcha Walk entlang der Limmat",
+    "en": "Matcha Walk along the Limmat"
+  },
+  "description": {
+    "de": "Spaziergang in moderatem Tempo vom Bürkliplatz dem Fluss entlang bis Höngg. Unterwegs Stopp für Matcha. Gute Schuhe und etwas Zeit für tiefere Gespräche, das ist die Idee.",
+    "en": "Walk at moderate pace from Bürkliplatz along the river to Höngg. Matcha stop on the way. Good shoes and a bit of time for deeper conversations, that is the idea."
+  },
+  "date": "2026-09-19T10:00:00+02:00",
+  "duration_minutes": 150,
+  "location": {
+    "name": "Zürich",
+    "meeting_point": {
+      "de": "Bürkliplatz, beim Brunnen",
+      "en": "Bürkliplatz, by the fountain"
+    }
+  },
+  "difficulty": "easy",
+  "activity": "walking",
+  "cancelled": false
+}
