@@ -2,17 +2,19 @@
   "name": "move-and-meet",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "description": "Move & Meet community website",
   "license": "SEE LICENSE IN LICENSE.md",
   "packageManager": "pnpm@9.15.0",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:cf": "next build && next-on-pages",
-    "preview:cf": "wrangler pages dev .vercel/output/static",
+    "build:cf": "opennextjs-cloudflare build",
+    "preview:cf": "opennextjs-cloudflare preview",
+    "deploy:cf": "opennextjs-cloudflare deploy",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
@@ -24,6 +26,7 @@
     "test:e2e": "playwright test",
     "validate:content": "tsx scripts/validate-content.ts",
     "process:images": "tsx scripts/process-images.ts",
+    "check": "node scripts/check.mjs",
     "prepare": "husky"
   },
   "dependencies": {
@@ -42,10 +45,10 @@
     "zod": "^3.24.0"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.7",
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@eslint/eslintrc": "^3.2.0",
+    "@opennextjs/cloudflare": "^1.0.0",
     "@playwright/test": "^1.49.0",
     "@tailwindcss/postcss": "^4.0.0",
     "@testing-library/jest-dom": "^6.6.0",
@@ -68,9 +71,8 @@
     "tailwindcss": "^4.0.0",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0",
-    "vercel": "^39.0.0",
     "vitest": "^2.1.0",
-    "wrangler": "^3.95.0"
+    "wrangler": "^4.0.0"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
