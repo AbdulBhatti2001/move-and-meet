@@ -2,6 +2,7 @@
   "name": "move-and-meet",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "description": "Move & Meet community website",
   "license": "SEE LICENSE IN LICENSE.md",
   "packageManager": "pnpm@9.15.0",
@@ -10,7 +11,8 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "opennextjs-cloudflare build",
+    "build:next": "next build",
     "build:cf": "opennextjs-cloudflare build",
     "preview:cf": "opennextjs-cloudflare preview",
     "deploy:cf": "opennextjs-cloudflare deploy",
