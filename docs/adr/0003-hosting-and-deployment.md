@@ -108,8 +108,8 @@ Create the Cloudflare project linked to the GitHub repository (Workers Builds fl
 
 In Project Settings → Variables and Secrets:
 
-- Production: `NEXT_PUBLIC_SITE_URL` = production URL, `NODE_VERSION` = `20`
-- Preview: `NEXT_PUBLIC_SITE_URL` = preview URL pattern, `NODE_VERSION` = `20`
+- Production: `NEXT_PUBLIC_SITE_URL` = production URL, `NODE_VERSION` = `22`
+- Preview: `NEXT_PUBLIC_SITE_URL` = preview URL pattern, `NODE_VERSION` = `22`
 
 `wrangler.toml` lives at the repo root with the configuration shown above. `nodejs_compat` is required for Sharp's build-time use (build runs on Cloudflare's Linux runners which do have Node, so this is for compatibility of imported modules, not Sharp at runtime).
 

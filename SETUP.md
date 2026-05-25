@@ -4,20 +4,20 @@ Diese Datei beschreibt die einmaligen Schritte, um Move & Meet lokal lauffähig 
 
 Alle Befehle laufen aus dem Repo-Root (`C:\Projects\move&meet\move-and-meet`) in einer Windows-PowerShell oder einem Terminal deiner Wahl.
 
-## 1. Node 20 sicherstellen
+## 1. Node 22 sicherstellen
 
 ```powershell
 node --version
 ```
 
-Sollte `v20.x.x` zeigen. Wenn du eine andere Version hast, installiere Node 20 LTS von <https://nodejs.org/> oder via `nvm-windows`:
+Sollte `v22.x.x` oder höher zeigen. Wenn du eine ältere Version hast, installiere Node 22 LTS von <https://nodejs.org/> oder via `nvm-windows`:
 
 ```powershell
-nvm install 20
-nvm use 20
+nvm install 22
+nvm use 22
 ```
 
-Die Datei `.nvmrc` im Repo pinnt die Version für Tools die das lesen.
+Die Datei `.nvmrc` im Repo pinnt die Version für Tools die das lesen. Node 22 ist Pflicht weil Wrangler 4 und `@opennextjs/cloudflare` es voraussetzen.
 
 ## 2. pnpm installieren
 
