@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.vercel/
+.wrangler/
+out/
+build/
+dist/
+coverage/
+playwright-report/
+test-results/
+pnpm-lock.yaml
+public/images/optimised/
+.claude/

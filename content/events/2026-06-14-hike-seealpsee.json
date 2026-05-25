@@ -1,0 +1,23 @@
+{
+  "slug": "hike-seealpsee-2026-06-14",
+  "title": {
+    "de": "Hike Seealpsee",
+    "en": "Seealpsee Hike"
+  },
+  "description": {
+    "de": "Gemeinsame Wanderung zum Seealpsee im Alpstein. Wunderschöne Aussicht, Bewegung in der Natur, danach Zeit für Gespräche und Matcha am See.",
+    "en": "Group hike to Seealpsee in the Alpstein region. Beautiful views, movement in nature, then time for conversation and matcha by the lake."
+  },
+  "date": "2026-06-14T08:00:00+02:00",
+  "duration_minutes": 240,
+  "location": {
+    "name": "Seealpsee, Alpstein",
+    "meeting_point": {
+      "de": "Parkplatz Wasserauen",
+      "en": "Wasserauen car park"
+    }
+  },
+  "difficulty": "moderate",
+  "activity": "hiking",
+  "cancelled": false
+}

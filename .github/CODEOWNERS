@@ -1,0 +1,10 @@
+# CODEOWNERS for Move & Meet
+# Default reviewers for paths. GitHub uses the last matching pattern.
+
+* @AbdulBhatti2001
+
+# Architecture, content, and CI changes require explicit owner review.
+/docs/adr/ @AbdulBhatti2001
+/content/ @AbdulBhatti2001
+/.github/ @AbdulBhatti2001
+/PROJECT_BRIEF.md @AbdulBhatti2001

@@ -1,0 +1,24 @@
+{
+  "Meta": {
+    "siteName": "Move & Meet",
+    "tagline": "Movement · Connection · Sisterhood"
+  },
+  "Navigation": {
+    "home": "Start",
+    "events": "Events",
+    "about": "Über uns",
+    "community": "Community",
+    "faq": "FAQ",
+    "join": "Beitreten",
+    "legal": "Rechtliches"
+  },
+  "HomePage": {
+    "title": "Move & Meet",
+    "subtitle": "Movement · Connection · Sisterhood",
+    "intro": "Diese Site wird gerade gebaut. Bald hier zu sehen: Hikes, Runs, Pilates und eine Community starker Frauen mit weichem Herzen."
+  },
+  "Footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "legal": "Rechtliches"
+  }
+}

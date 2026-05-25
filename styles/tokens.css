@@ -1,0 +1,47 @@
+/**
+ * Move & Meet — Design Tokens
+ *
+ * Single source of truth for colour, typography stacks, and motion tokens.
+ * Consumed by Tailwind v4 via the @theme directive below.
+ *
+ * Naming convention follows Tailwind v4's --color-*, --font-*, --ease-*
+ * prefixes so utility classes like `bg-olive-800`, `text-cream-100`,
+ * `font-display`, `ease-brand` are generated automatically.
+ *
+ * The actual font files are loaded via `next/font` in app/[locale]/layout.tsx
+ * and set their own CSS variables on the <html> element (--font-fraunces,
+ * --font-inter, --font-jetbrains-mono). The @theme block below maps those
+ * loaded fonts into the brand token names that components reference.
+ */
+
+@theme {
+  /* Brand palette — olive (primary surfaces) */
+  --color-olive-900: #2b2d17;
+  --color-olive-800: #3f4124;
+  --color-olive-700: #4a4d2e;
+  --color-olive-600: #5c6038;
+
+  /* Brand palette — cream (text and surfaces) */
+  --color-cream-50: #f7f3e8;
+  --color-cream-100: #f2ede0;
+  --color-cream-200: #e6dec8;
+
+  /* Brand accent — bronze (linework, accents) */
+  --color-bronze-400: #b8a77a;
+
+  /* Brand depth — ink (deep overlays) */
+  --color-ink-950: #0d0d0b;
+
+  /* States */
+  --color-success: #6b8e4e;
+  --color-warning: #c9a24b;
+  --color-error: #b65454;
+
+  /* Typography stacks — wrap next/font loaded variables in fallbacks */
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+
+  /* Motion */
+  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+}
