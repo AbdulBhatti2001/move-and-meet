@@ -189,6 +189,7 @@ Vor jedem Merge in `main`:
 - 2026-05-25 — `messages/{de,en}.json` ergänzt um `Navigation`, `LanguageSwitcher`, `Hero`, `Pillars`, `Footer` Namespaces (parity 23 Keys).
 - 2026-05-25 — `lucide-react ^0.469.0` als Dependency.
 - **Pending**: Owner führt `pnpm install` (für lucide-react), `pnpm check`, Smoke-Tests, Commit + Push.
+- 2026-05-25 — Sprint-2-Hotfix: Production Worker crashte mit `Internal Server Error` und `Dynamic require of "/.next/server/middleware-manifest.json" is not supported`. Research-Agent hat bestätigt: bekannter Bug in @opennextjs/cloudflare (issues #1232 / #922 / workers-sdk #10236). Fix-Triade applied: (a) `wrangler.toml [vars] NEXT_PRIVATE_MINIMAL_MODE = "1"` (maintainer-recommended workaround, lässt Next-Server-Runtime den early-return Branch nehmen, next-intl Middleware läuft weiter weil OpenNext sie separat bundelt); (b) `compatibility_date` von Future-Date `2026-05-01` auf real `2025-09-23` (OpenNext probiert Compat-Flags basierend auf Datum, Future-Date verwirrt das); (c) `.npmrc` mit `shamefully-hoist=true` + `node-linker=hoisted` (pnpm Symlinks blockieren esbuild's statisches Manifest-Bundling). Plus `NEXT_PUBLIC_SITE_URL` als Var gesetzt damit Metadata-Base nicht auf localhost zeigt.
 
 ## 12. Sprint 1 Log
 
