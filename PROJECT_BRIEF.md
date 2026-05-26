@@ -2,9 +2,9 @@
 
 > Lebendes Briefing. Wird nach jedem Sprint aktualisiert. Enthält aktuellen Stand, Architekturentscheidungen (via ADR-Links), Sprint-Status und offene Fragen.
 
-**Letztes Update**: 2026-05-25 (Sprint 3 gemerged, Sprint 4 Implementation fertig)
-**Aktueller Sprint**: 4 (About, Community, Founders)
-**Sprint-Status**: Files auf Branch `feat/about-community-founders`, lokale Tests offen
+**Letztes Update**: 2026-05-26 (Sprint 4 von main gemerged, Sprint 5 Files dazu)
+**Aktueller Sprint**: 5 (FAQ, Join, Rechtliches)
+**Sprint-Status**: Sprint 4 (About, Community, Founders) gemerged. Sprint 5 (FAQ, Join, Rechtliches) Files auf Disk, lokale Tests und Approval Gate offen.
 
 ---
 

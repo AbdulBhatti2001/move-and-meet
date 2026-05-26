@@ -133,6 +133,99 @@
       "body": "You do not need to have run a marathon or summited a peak. Come as you are, at your pace. We are waiting."
     }
   },
+  "FAQ": {
+    "eyebrow": "Frequently asked",
+    "title": "FAQ",
+    "subtitle": "What you should know before your first event. If your question is not answered here, just write to us.",
+    "items": {
+      "beginners": {
+        "question": "Am I fit enough?",
+        "answer": "Yes. Every event is tagged with a level (Easy, Moderate, Challenging). At the Easy level we move at the pace of the slowest. If you walk regularly, you are good to come."
+      },
+      "womenOnly": {
+        "question": "Are events women-only?",
+        "answer": "Yes. Move & Meet is a space by and for women. That is the core of the idea and it will not change."
+      },
+      "cost": {
+        "question": "What does it cost?",
+        "answer": "Nothing. The events themselves are free. Things like mountain railways, public transport tickets or your matcha at the café are on you."
+      },
+      "equipment": {
+        "question": "Do I need special gear?",
+        "answer": "For pilates and walking, comfortable clothes and a water bottle are enough. For hikes you need good shoes, a rain jacket and enough water. Details are in each event description."
+      },
+      "religion": {
+        "question": "Do I have to be Muslim to come along?",
+        "answer": "No. Move & Meet was founded by women with an Active Deen background, but events are open to all women who share our values. Respect, honesty, consideration."
+      },
+      "safety": {
+        "question": "What about safety?",
+        "answer": "At every event there is at least one experienced person on site. We share the meeting point, route and expected end time in advance. On hikes and runs we never let anyone return alone."
+      },
+      "signup": {
+        "question": "How do I sign up?",
+        "answer": "Via our WhatsApp group or by DM on Instagram. You will find both links on the Join page. There is no formal sign-up on the website at the moment."
+      },
+      "kids": {
+        "question": "Can I bring my kids?",
+        "answer": "For most sporting events sadly not, because we focus on the pace of the group. For selected walks and matcha dates we sometimes make exceptions, that will be stated in the event description."
+      }
+    }
+  },
+  "Join": {
+    "eyebrow": "Join",
+    "title": "Come with us",
+    "subtitle": "We coordinate everything via WhatsApp and Instagram. Write to us, we cannot wait to meet you.",
+    "whatsapp": "WhatsApp group",
+    "instagram": "Follow on Instagram",
+    "whatsappUrl": "https://wa.me/41000000000",
+    "instagramUrl": "https://instagram.com/moveandmeet.ch",
+    "footnote": "Both channels are external. We see your number or your profile. Nothing more. What you share is up to you."
+  },
+  "Legal": {
+    "eyebrow": "Legal",
+    "title": "Impressum and privacy",
+    "subtitle": "Responsible party, contact and how we handle data.",
+    "impressum": {
+      "heading": "Impressum",
+      "responsibleLabel": "Responsible",
+      "responsibleName": "Abdulmannan Bhatti",
+      "responsibleAddress": "Address will be added before launch, Switzerland",
+      "contactEmail": "kontakt@movemeet.ch",
+      "disclaimer": "In Phase 1 this website is operated by a private person. Once the Move & Meet association is founded, the responsible party will be updated accordingly."
+    },
+    "privacy": {
+      "heading": "Privacy policy",
+      "scope": {
+        "heading": "Scope",
+        "body": "This privacy policy applies to the website movemeet.ch and all sub-pages. It informs you about which data we process when you visit our site."
+      },
+      "controller": {
+        "heading": "Controller",
+        "body": "The person named in the Impressum is the controller for data processing. For privacy questions you can reach us via the email address above."
+      },
+      "processing": {
+        "heading": "Which data we process",
+        "body": "When you visit our website, our hosting provider (Cloudflare) records technically necessary server logs. These include IP address, time of access, page requested and user agent. These logs are used solely for operational security and are deleted after a short period."
+      },
+      "cookies": {
+        "heading": "Cookies and tracking",
+        "body": "We do not use tracking cookies, analytics or profiling. The only client-side storage concerns your language preference (DE/EN) so you do not have to choose it on every visit."
+      },
+      "processors": {
+        "heading": "Processors",
+        "body": "The website is hosted on Cloudflare Workers. Cloudflare therefore processes server logs as a sub-processor on our behalf. Cloudflare is certified according to EU standards (standard contractual clauses)."
+      },
+      "rights": {
+        "heading": "Your rights",
+        "body": "You have the right at any time to information, correction, deletion and restriction of the processing of your data under revFADP (Switzerland) and GDPR (EU). To exercise these rights, contact the email address given in the Impressum."
+      },
+      "changes": {
+        "heading": "Changes",
+        "body": "This privacy policy may be updated if data processing changes. The current version is always on this page."
+      }
+    }
+  },
   "Footer": {
     "tagline": "Movement · Connection · Sisterhood",
     "rights": "All rights reserved",
