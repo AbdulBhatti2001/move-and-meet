@@ -84,6 +84,145 @@
       "challenging": "Anspruchsvoll"
     }
   },
+  "About": {
+    "eyebrow": "Über uns",
+    "title": "Wer wir sind",
+    "subtitle": "Move & Meet ist aus dem Wunsch entstanden, einen Ort für Frauen zu schaffen, die sich bewegen wollen, ohne sich verstellen zu müssen.",
+    "vision": {
+      "eyebrow": "Unsere Vision",
+      "quote": "Strong women. Soft hearts. Active deen.",
+      "paragraph1": "Wir glauben, dass Bewegung mehr ist als Training. Sie ist der Anlass, vor die Tür zu gehen, sich Zeit für sich selbst zu nehmen und dabei anderen Frauen zu begegnen, die das Gleiche suchen.",
+      "paragraph2": "Move & Meet ist offen für alle Fitness-Level. Wir gehen das Tempo der Langsamsten, weil es darum geht, dass am Ende alle ankommen. Niemand bleibt zurück.",
+      "paragraph3": "Nach der Bewegung kommt der Matcha. Wir nehmen uns Zeit für echte Gespräche, weil Community ohne Tiefe leer bleibt."
+    },
+    "founders": {
+      "heading": "Die Gründerinnen",
+      "aysin": {
+        "initial": "A",
+        "name": "Aysin",
+        "role": "Mitgründerin · Bewegung",
+        "bio": "Mutter von vier Kindern, Läuferin und Strength-Coach im Herzen. Aysin bringt die Disziplin und die Wärme mit, die diese Community trägt."
+      },
+      "michelle": {
+        "initial": "M",
+        "name": "Michelle",
+        "role": "Mitgründerin · Connection",
+        "bio": "Studentin der Wirtschaftspsychologie. Michelle organisiert Gruppensport, Pilates und die Matcha-Dates danach, bei denen Freundschaften entstehen."
+      }
+    }
+  },
+  "Community": {
+    "eyebrow": "Community",
+    "title": "Unsere Community",
+    "subtitle": "Strong women, soft hearts. Eine Gruppe von Frauen, die sich gegenseitig den Rücken stärken, ohne Wettbewerb, ohne Druck.",
+    "gallery": {
+      "heading": "So fühlt sich Move & Meet an",
+      "label": "Eindrücke aus der Community",
+      "tile1": "Wir gehen das Tempo der Langsamsten. Immer.",
+      "tile2": "Matcha danach ist Pflicht.",
+      "tile3": "Echte Gespräche. Keine Smalltalk-Schleifen.",
+      "tile4": "Frauen, die sich gegenseitig stärken statt vergleichen.",
+      "tile5": "Bewegung als Selbstverständlichkeit.",
+      "tile6": "Eine Community, die trägt."
+    },
+    "welcome": {
+      "heading": "Anfängerinnen willkommen",
+      "body": "Du musst nichts mitbringen ausser Lust auf Bewegung und Begegnung. Wir sind alle irgendwann zum ersten Mal mitgekommen. Wenn du unsicher bist, schreib uns vorher kurz, dann holen wir dich am Treffpunkt persönlich ab."
+    }
+  },
+  "FAQ": {
+    "eyebrow": "Häufige Fragen",
+    "title": "FAQ",
+    "subtitle": "Was du vor deinem ersten Event wissen solltest. Wenn deine Frage hier nicht beantwortet wird, schreib uns einfach.",
+    "items": {
+      "beginners": {
+        "question": "Bin ich fit genug?",
+        "answer": "Ja. Wir markieren jedes Event mit einem Niveau (Leicht, Mittel, Anspruchsvoll). Beim Niveau Leicht gehen wir das Tempo der Langsamsten. Wenn du regelmässig spazieren gehst, bist du dabei."
+      },
+      "womenOnly": {
+        "question": "Sind die Events nur für Frauen?",
+        "answer": "Ja. Move & Meet ist ein Raum von und für Frauen. Das ist der Kern unserer Idee und ändert sich nicht."
+      },
+      "cost": {
+        "question": "Was kostet die Teilnahme?",
+        "answer": "Nichts. Die Events selbst sind kostenlos. Allfällige Bergbahnen, ÖV-Tickets oder dein Matcha im Café bezahlst du selbst."
+      },
+      "equipment": {
+        "question": "Brauche ich spezielle Ausrüstung?",
+        "answer": "Für Pilates und Walking reichen bequeme Kleider und eine Trinkflasche. Für Hikes brauchst du gute Schuhe, eine Regenjacke und genug Wasser. Details stehen jeweils in der Event-Beschreibung."
+      },
+      "religion": {
+        "question": "Muss ich Muslima sein, um mitzukommen?",
+        "answer": "Nein. Move & Meet wurde von Frauen mit Active-Deen-Hintergrund gegründet, aber die Events stehen allen Frauen offen, die unsere Werte teilen. Respekt, Aufrichtigkeit, Rücksicht."
+      },
+      "safety": {
+        "question": "Wie ist es mit Sicherheit?",
+        "answer": "Bei jedem Event ist mindestens eine erfahrene Person vor Ort. Wir teilen vorher Treffpunkt, Route und voraussichtliche Endzeit. Bei Hikes und Runs gehen wir nie alleine zurück."
+      },
+      "signup": {
+        "question": "Wie melde ich mich an?",
+        "answer": "Über unsere WhatsApp-Gruppe oder per DM auf Instagram. Beide Links findest du auf der Beitreten-Seite. Eine formelle Anmeldung auf der Website gibt es aktuell nicht."
+      },
+      "kids": {
+        "question": "Kann ich meine Kinder mitbringen?",
+        "answer": "Bei den meisten sportlichen Events leider nein, weil wir uns auf das Tempo der Gruppe konzentrieren. Für ausgewählte Walks und Matcha-Dates machen wir manchmal Ausnahmen, das steht dann in der Event-Beschreibung."
+      }
+    }
+  },
+  "Join": {
+    "eyebrow": "Beitreten",
+    "title": "Komm mit uns mit",
+    "subtitle": "Wir koordinieren alles über WhatsApp und Instagram. Schreib uns, wir freuen uns auf dich.",
+    "whatsapp": "WhatsApp Gruppe",
+    "instagram": "Instagram folgen",
+    "whatsappUrl": "https://wa.me/41000000000",
+    "instagramUrl": "https://instagram.com/moveandmeet.ch",
+    "footnote": "Beide Kanäle sind extern. Wir sehen deine Nummer beziehungsweise dein Profil. Mehr nicht. Was du teilst, entscheidest du."
+  },
+  "Legal": {
+    "eyebrow": "Rechtliches",
+    "title": "Impressum und Datenschutz",
+    "subtitle": "Verantwortliche Stelle, Kontakt und wie wir mit Daten umgehen.",
+    "impressum": {
+      "heading": "Impressum",
+      "responsibleLabel": "Verantwortlich",
+      "responsibleName": "Abdulmannan Bhatti",
+      "responsibleAddress": "Adresse wird vor Launch ergänzt, Schweiz",
+      "contactEmail": "kontakt@movemeet.ch",
+      "disclaimer": "Diese Website wird in Phase 1 von einer Privatperson betrieben. Mit Gründung des Vereins Move & Meet wird die verantwortliche Stelle entsprechend angepasst."
+    },
+    "privacy": {
+      "heading": "Datenschutzerklärung",
+      "scope": {
+        "heading": "Geltungsbereich",
+        "body": "Diese Datenschutzerklärung gilt für die Website movemeet.ch und alle Unterseiten. Sie informiert dich darüber, welche Daten wir verarbeiten, wenn du unsere Website besuchst."
+      },
+      "controller": {
+        "heading": "Verantwortliche Stelle",
+        "body": "Verantwortlich für die Datenbearbeitung ist die im Impressum genannte Person. Bei Fragen zum Datenschutz erreichst du uns über die oben angegebene E-Mail-Adresse."
+      },
+      "processing": {
+        "heading": "Welche Daten wir verarbeiten",
+        "body": "Wenn du unsere Website besuchst, erfasst unser Hosting-Provider (Cloudflare) technisch notwendige Server-Logs. Dazu gehören IP-Adresse, Zeitpunkt des Zugriffs, abgerufene Seite und User-Agent. Diese Logs dienen ausschliesslich der Betriebssicherheit und werden nach kurzer Zeit gelöscht."
+      },
+      "cookies": {
+        "heading": "Cookies und Tracking",
+        "body": "Wir setzen keine Tracking-Cookies, kein Analytics, kein Profiling. Die einzige clientseitige Speicherung betrifft deine Spracheinstellung (DE/EN), damit du nicht bei jedem Besuch neu wählen musst."
+      },
+      "processors": {
+        "heading": "Auftragsbearbeiter",
+        "body": "Die Website wird auf Cloudflare Workers gehostet. Cloudflare verarbeitet damit als Sub-Auftragsbearbeiter Server-Logs in unserem Auftrag. Cloudflare ist nach EU-Standards (Standardvertragsklauseln) zertifiziert."
+      },
+      "rights": {
+        "heading": "Deine Rechte",
+        "body": "Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Bearbeitung deiner Daten gemäss revDSG (Schweiz) und DSGVO (EU). Wende dich dafür an die im Impressum genannte Kontakt-E-Mail."
+      },
+      "changes": {
+        "heading": "Änderungen",
+        "body": "Diese Datenschutzerklärung kann angepasst werden, wenn sich die Datenverarbeitung ändert. Die jeweils aktuelle Version findest du immer auf dieser Seite."
+      }
+    }
+  },
   "Footer": {
     "tagline": "Movement · Connection · Sisterhood",
     "rights": "Alle Rechte vorbehalten",

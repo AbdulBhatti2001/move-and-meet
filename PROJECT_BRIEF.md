@@ -2,9 +2,9 @@
 
 > Lebendes Briefing. Wird nach jedem Sprint aktualisiert. Enthält aktuellen Stand, Architekturentscheidungen (via ADR-Links), Sprint-Status und offene Fragen.
 
-**Letztes Update**: 2026-05-25 (Sprint 2 live + Hotfix, Sprint 3 Implementation fertig)
-**Aktueller Sprint**: 3 (Events Display)
-**Sprint-Status**: Files auf Branch `feat/events-display`, lokale Tests offen
+**Letztes Update**: 2026-05-26 (Sprint 4 + Sprint 5 Implementation auf Disk)
+**Aktueller Sprint**: 5 (FAQ, Join, Rechtliches)
+**Sprint-Status**: Sprint 4 (About, Community, Founders) und Sprint 5 (FAQ, Join, Rechtliches) Files erstellt, lokale Tests und Approval Gate offen. Branch `feat/faq-join-legal`.
 
 ---
 
