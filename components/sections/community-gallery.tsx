@@ -1,67 +1,62 @@
 import { useTranslations } from 'next-intl';
-import { cn } from '@/lib/shared';
 import { Reveal } from '@/components/motion/reveal';
+import { cn } from '@/lib/shared';
 
 /**
- * CommunityGallery — typographic placeholder mosaic for the /community page.
+ * CommunityGallery — placeholder gallery of typographic quote tiles.
  *
- * Six tiles in a responsive grid, each with a brand quote on a soft cream/
- * olive gradient. Heights vary (sm/md/lg) so the layout feels like a real
- * photo mosaic. When real Move & Meet community photos arrive (Phase 2),
- * swap the inner <div> for an <Image> and drop the quote.
+ * Phase 1 uses gradient tiles with brand quotes overlaid; the layout is
+ * production-ready and will swap to real Move & Meet community photos
+ * once the owner provides them (see PROJECT_BRIEF section 8 TODOs).
  *
- * Quotes come from messages/{locale}.json under Community.gallery.tile{1..6}.
+ * Quote tiles are not vertically uniform; varying min-heights create the
+ * mosaic feel typical of editorial galleries.
  */
 
 const TILES = [
-  { key: 'tile1', span: 'sm:col-span-2', height: 'h-64 sm:h-80' },
-  { key: 'tile2', span: '', height: 'h-64 sm:h-80' },
-  { key: 'tile3', span: '', height: 'h-64 sm:h-96' },
-  { key: 'tile4', span: 'sm:col-span-2', height: 'h-64 sm:h-72' },
-  { key: 'tile5', span: '', height: 'h-64 sm:h-72' },
-  { key: 'tile6', span: 'sm:col-span-3', height: 'h-64 sm:h-80' },
+  { id: 'q1', tone: 'olive-deep', size: 'md' },
+  { id: 'q2', tone: 'bronze', size: 'sm' },
+  { id: 'q3', tone: 'olive-mid', size: 'lg' },
+  { id: 'q4', tone: 'olive-deep', size: 'sm' },
+  { id: 'q5', tone: 'bronze', size: 'md' },
+  { id: 'q6', tone: 'olive-mid', size: 'sm' },
 ] as const;
 
-const GRADIENTS = [
-  'from-olive-700 to-olive-900',
-  'from-olive-600 to-olive-800',
-  'from-olive-800 to-olive-900',
-  'from-olive-700 to-olive-800',
-  'from-olive-600 to-olive-700',
-  'from-olive-700 to-olive-900',
-];
+const TONE_CLASS: Record<(typeof TILES)[number]['tone'], string> = {
+  'olive-deep': 'bg-gradient-to-br from-olive-900 to-olive-700',
+  'olive-mid': 'bg-gradient-to-br from-olive-700 to-olive-800',
+  bronze: 'bg-gradient-to-br from-bronze-400/30 to-olive-700',
+};
+
+const SIZE_CLASS: Record<(typeof TILES)[number]['size'], string> = {
+  sm: 'min-h-48',
+  md: 'min-h-64',
+  lg: 'min-h-80',
+};
 
 export function CommunityGallery() {
-  const t = useTranslations('Community.gallery');
+  const t = useTranslations('Community');
 
   return (
     <ul
       role="list"
-      className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6"
-      aria-label={t('label')}
+      className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6"
+      aria-label={t('gallery.label')}
     >
-      {TILES.map((tile, index) => (
+      {TILES.map(({ id, tone, size }, index) => (
         <Reveal
-          key={tile.key}
+          key={id}
           as="li"
-          delay={index * 0.05}
-          className={cn(tile.span, 'overflow-hidden rounded-2xl')}
+          delay={(index % 3) * 0.06}
+          className={cn(
+            'group relative flex items-end overflow-hidden rounded-2xl p-6',
+            TONE_CLASS[tone],
+            SIZE_CLASS[size],
+          )}
         >
-          <div
-            className={cn(
-              'relative flex items-end bg-gradient-to-br p-6 sm:p-8',
-              GRADIENTS[index % GRADIENTS.length],
-              tile.height,
-            )}
-          >
-            <div
-              aria-hidden
-              className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-bronze-400)_0%,_transparent_50%)] opacity-10"
-            />
-            <blockquote className="font-display text-cream-100 relative text-xl leading-snug sm:text-2xl">
-              {t(tile.key)}
-            </blockquote>
-          </div>
+          <p className="font-display text-cream-100 text-xl leading-snug text-balance sm:text-2xl">
+            {t(`gallery.tiles.${id}`)}
+          </p>
         </Reveal>
       ))}
     </ul>

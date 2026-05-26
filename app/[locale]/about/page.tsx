@@ -6,7 +6,6 @@ import { VisionSection } from '@/components/sections/vision-section';
 import { Reveal } from '@/components/motion/reveal';
 import { isValidLocale, routing } from '@/i18n/routing';
 
-/** Pre-render per locale at build time; no runtime data fetching. */
 export const dynamic = 'force-static';
 
 export function generateStaticParams() {
@@ -19,16 +18,9 @@ export async function generateMetadata({ params }: { params: Params }) {
   const { locale } = await params;
   if (!isValidLocale(locale)) notFound();
   const t = await getTranslations({ locale, namespace: 'About' });
-  return { title: t('title') };
+  return { title: t('title'), description: t('subtitle') };
 }
 
-/**
- * /about — Über uns.
- *
- * Composition: page header → vision/manifesto block → two founder cards
- * (Aysin links, Michelle rechts). No registration CTAs here per Phase 1
- * scope; community on-ramps live on /join.
- */
 export default async function AboutPage({ params }: { params: Params }) {
   const { locale } = await params;
   if (!isValidLocale(locale)) notFound();
@@ -53,20 +45,22 @@ export default async function AboutPage({ params }: { params: Params }) {
       <Container
         as="section"
         size="lg"
-        className="space-y-24 py-16 md:space-y-32 md:py-24"
+        className="py-24 md:py-32"
         aria-labelledby="founders-heading"
       >
         <Reveal>
-          <h2
-            id="founders-heading"
-            className="font-display text-cream-100 text-center text-3xl tracking-tight sm:text-4xl"
-          >
-            {t('founders.heading')}
-          </h2>
+          <SectionHeader
+            align="center"
+            level={2}
+            eyebrow={t('founders.eyebrow')}
+            title={<span id="founders-heading">{t('founders.heading')}</span>}
+            subtitle={t('founders.intro')}
+          />
         </Reveal>
-
-        <FounderCard founder="aysin" align="left" />
-        <FounderCard founder="michelle" align="right" />
+        <div className="mt-20 flex flex-col gap-24">
+          <FounderCard founder="aysin" align="left" />
+          <FounderCard founder="michelle" align="right" />
+        </div>
       </Container>
     </>
   );

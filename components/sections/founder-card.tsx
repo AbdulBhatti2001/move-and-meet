@@ -3,54 +3,63 @@ import { cn } from '@/lib/shared';
 import { Reveal } from '@/components/motion/reveal';
 
 type FounderKey = 'aysin' | 'michelle';
+
 type FounderCardProps = {
   founder: FounderKey;
   align?: 'left' | 'right';
 };
 
+const INITIAL: Record<FounderKey, string> = {
+  aysin: 'A',
+  michelle: 'M',
+};
+
 /**
- * FounderCard — typographic portrait placeholder for the /about page.
+ * FounderCard — bio block for a single founder.
  *
- * Phase 1 does not ship real photos yet, so each founder is represented by a
- * bronze-ringed cream circle holding a display-serif initial. Once real
- * portraits land (Phase 2), swap the inner <div> for an <Image>.
+ * Phase 1 uses a typographic placeholder portrait: a bronze-ringed circle
+ * with the founder's display-serif initial. When real line illustrations
+ * land (Sprint 4 TODO in PROJECT_BRIEF), this swaps to an SVG / Image
+ * import without changing the card layout.
  *
- * `align` flips the layout left/right so two cards form a gentle zig-zag
- * down the page. Bio + role come from messages/{locale}.json under the
- * About.founders.{founder} namespace.
+ * Alternates portrait-text order via `align` so the About page reads as a
+ * conversation rather than a list.
  */
 export function FounderCard({ founder, align = 'left' }: FounderCardProps) {
-  const t = useTranslations(`About.founders.${founder}`);
+  const t = useTranslations('Founders');
+  const initial = INITIAL[founder];
 
   return (
-    <Reveal
+    <article
       className={cn(
-        'flex flex-col items-center gap-8 sm:gap-12',
-        align === 'left' ? 'sm:flex-row' : 'sm:flex-row-reverse',
+        'grid items-center gap-10 md:grid-cols-[auto_1fr] md:gap-16',
+        align === 'right' && 'md:grid-cols-[1fr_auto]',
       )}
     >
-      <div
-        aria-hidden
-        className="ring-bronze-400/60 bg-cream-100/5 flex h-40 w-40 shrink-0 items-center justify-center rounded-full ring-2 ring-offset-4 ring-offset-olive-800 sm:h-48 sm:w-48"
-      >
-        <span className="font-display text-cream-100 text-6xl sm:text-7xl">{t('initial')}</span>
-      </div>
+      <Reveal className={align === 'right' ? 'md:order-2' : ''}>
+        <div
+          className="border-bronze-400/40 relative flex h-48 w-48 items-center justify-center rounded-full border bg-olive-700/30 md:h-64 md:w-64"
+          aria-hidden
+        >
+          <span className="font-display text-cream-100 text-8xl leading-none md:text-9xl">
+            {initial}
+          </span>
+          <span className="border-bronze-400/20 absolute inset-2 rounded-full border" />
+        </div>
+      </Reveal>
 
-      <div
-        className={cn(
-          'flex flex-col gap-3',
-          align === 'left' ? 'sm:text-left' : 'sm:text-right',
-          'text-center',
-        )}
+      <Reveal
+        delay={0.1}
+        className={cn('flex flex-col gap-4', align === 'right' && 'md:order-1 md:text-right')}
       >
-        <p className="text-bronze-400 text-xs tracking-[0.3em] uppercase">{t('role')}</p>
-        <h3 className="font-display text-cream-100 text-4xl tracking-tight sm:text-5xl">
-          {t('name')}
+        <p className="text-bronze-400 text-xs tracking-[0.3em] uppercase">{t(`${founder}.role`)}</p>
+        <h3 className="font-display text-cream-100 text-4xl leading-tight tracking-tight sm:text-5xl">
+          {t(`${founder}.name`)}
         </h3>
         <p className="text-cream-100/70 max-w-prose text-base leading-relaxed sm:text-lg">
-          {t('bio')}
+          {t(`${founder}.bio`)}
         </p>
-      </div>
-    </Reveal>
+      </Reveal>
+    </article>
   );
 }

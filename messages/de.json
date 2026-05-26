@@ -85,49 +85,52 @@
     }
   },
   "About": {
-    "eyebrow": "Über uns",
-    "title": "Wer wir sind",
-    "subtitle": "Move & Meet ist aus dem Wunsch entstanden, einen Ort für Frauen zu schaffen, die sich bewegen wollen, ohne sich verstellen zu müssen.",
+    "eyebrow": "Wer wir sind",
+    "title": "Über Move & Meet",
+    "subtitle": "Eine aktive Schwesternschaft für Frauen in der Schweiz, die Bewegung, ehrliche Gespräche und Tiefe in den Alltag holen wollen.",
     "vision": {
-      "eyebrow": "Unsere Vision",
+      "eyebrow": "Unsere Haltung",
       "quote": "Strong women. Soft hearts. Active deen.",
-      "paragraph1": "Wir glauben, dass Bewegung mehr ist als Training. Sie ist der Anlass, vor die Tür zu gehen, sich Zeit für sich selbst zu nehmen und dabei anderen Frauen zu begegnen, die das Gleiche suchen.",
-      "paragraph2": "Move & Meet ist offen für alle Fitness-Level. Wir gehen das Tempo der Langsamsten, weil es darum geht, dass am Ende alle ankommen. Niemand bleibt zurück.",
-      "paragraph3": "Nach der Bewegung kommt der Matcha. Wir nehmen uns Zeit für echte Gespräche, weil Community ohne Tiefe leer bleibt."
+      "body1": "Move & Meet ist kein Verein und kein Fitnessstudio. Wir sind eine Gruppe von Frauen, die merken: Bewegung ist nicht Pflicht, sie ist Privileg und Selbstverständlichkeit zugleich. Hiking, Running, Pilates, Strength, lange Spaziergänge. Was zählt ist, dass wir uns treffen und nicht abwarten bis wir bereit sind.",
+      "body2": "Wir glauben an Disziplin ohne Härte. An Schwesternschaft die hält. Und an Matcha-Stops zwischen den Kilometern."
     },
     "founders": {
-      "heading": "Die Gründerinnen",
-      "aysin": {
-        "initial": "A",
-        "name": "Aysin",
-        "role": "Mitgründerin · Bewegung",
-        "bio": "Mutter von vier Kindern, Läuferin und Strength-Coach im Herzen. Aysin bringt die Disziplin und die Wärme mit, die diese Community trägt."
-      },
-      "michelle": {
-        "initial": "M",
-        "name": "Michelle",
-        "role": "Mitgründerin · Connection",
-        "bio": "Studentin der Wirtschaftspsychologie. Michelle organisiert Gruppensport, Pilates und die Matcha-Dates danach, bei denen Freundschaften entstehen."
-      }
+      "eyebrow": "Meet the Founders",
+      "heading": "Die zwei hinter Move & Meet",
+      "intro": "Zwei Frauen, sehr unterschiedlich, eine geteilte Idee."
+    }
+  },
+  "Founders": {
+    "aysin": {
+      "name": "Aysin",
+      "role": "Mother of four · Running & Strength",
+      "bio": "Vier Kinder, ein Leben in Bewegung. Aysin glaubt an Disziplin ohne Härte. Running und Strength Training sind ihr Anker, der Kopf wird mitgenommen. Sie zeigt, dass Bewegung kein Luxus ist sondern Grundausstattung."
+    },
+    "michelle": {
+      "name": "Michelle",
+      "role": "Business Psychology · Group Sport · Matcha",
+      "bio": "Studiert Wirtschaftspsychologie, kommt am liebsten in der Gruppe ins Schwitzen. Für Michelle sind die Gespräche nach dem Training fast wichtiger als das Training selbst. Beste Currency: Matcha im Park, ehrliche Themen, kein Smalltalk."
     }
   },
   "Community": {
-    "eyebrow": "Community",
-    "title": "Unsere Community",
-    "subtitle": "Strong women, soft hearts. Eine Gruppe von Frauen, die sich gegenseitig den Rücken stärken, ohne Wettbewerb, ohne Druck.",
+    "eyebrow": "Bewegungsmomente",
+    "title": "Community",
+    "subtitle": "Die Energie der Move & Meet Gemeinschaft in Stimmen, Augenblicken und Sätzen die hängen bleiben.",
     "gallery": {
-      "heading": "So fühlt sich Move & Meet an",
-      "label": "Eindrücke aus der Community",
-      "tile1": "Wir gehen das Tempo der Langsamsten. Immer.",
-      "tile2": "Matcha danach ist Pflicht.",
-      "tile3": "Echte Gespräche. Keine Smalltalk-Schleifen.",
-      "tile4": "Frauen, die sich gegenseitig stärken statt vergleichen.",
-      "tile5": "Bewegung als Selbstverständlichkeit.",
-      "tile6": "Eine Community, die trägt."
+      "label": "Community Galerie",
+      "tiles": {
+        "q1": "Beginners welcome. Immer.",
+        "q2": "More than one sport. More than just workouts.",
+        "q3": "Wir bewegen uns, um zu wachsen. Gemeinsam.",
+        "q4": "Matcha nach dem Lauf. Gespräche, die bleiben.",
+        "q5": "No pressure. Just movement and connection.",
+        "q6": "Active deen. Strong women. Soft hearts."
+      }
     },
-    "welcome": {
-      "heading": "Anfängerinnen willkommen",
-      "body": "Du musst nichts mitbringen ausser Lust auf Bewegung und Begegnung. Wir sind alle irgendwann zum ersten Mal mitgekommen. Wenn du unsicher bist, schreib uns vorher kurz, dann holen wir dich am Treffpunkt persönlich ab."
+    "beginners": {
+      "eyebrow": "Wenn du noch nie dabei warst",
+      "heading": "Beginners welcome",
+      "body": "Du musst keinen Marathon laufen und keinen Berg bezwungen haben. Komm wie du bist, in deinem Tempo. Wir warten."
     }
   },
   "FAQ": {
