@@ -84,6 +84,55 @@
       "challenging": "Challenging"
     }
   },
+  "About": {
+    "eyebrow": "Who we are",
+    "title": "About Move & Meet",
+    "subtitle": "An active sisterhood for women in Switzerland who want to bring movement, honest conversations, and depth into everyday life.",
+    "vision": {
+      "eyebrow": "Our stance",
+      "quote": "Strong women. Soft hearts. Active deen.",
+      "body1": "Move & Meet is not a club and not a gym. We are a group of women who realised that movement is not an obligation, it is both a privilege and a given. Hiking, running, pilates, strength, long walks. What matters is that we meet, instead of waiting until we feel ready.",
+      "body2": "We believe in discipline without harshness. In a sisterhood that holds. And in matcha stops between the kilometres."
+    },
+    "founders": {
+      "eyebrow": "Meet the founders",
+      "heading": "The two behind Move & Meet",
+      "intro": "Two women, very different, one shared idea."
+    }
+  },
+  "Founders": {
+    "aysin": {
+      "name": "Aysin",
+      "role": "Mother of four · Running & Strength",
+      "bio": "Four children, a life in motion. Aysin believes in discipline without harshness. Running and strength training are her anchor, the mind comes along. She shows that movement is not a luxury but baseline equipment."
+    },
+    "michelle": {
+      "name": "Michelle",
+      "role": "Business Psychology · Group Sport · Matcha",
+      "bio": "Studies business psychology, prefers sweating in a group. For Michelle the conversations after the session matter almost more than the session itself. Best currency: matcha in the park, honest topics, no small talk."
+    }
+  },
+  "Community": {
+    "eyebrow": "Moments in motion",
+    "title": "Community",
+    "subtitle": "The energy of the Move & Meet community in voices, glances, and sentences that stay.",
+    "gallery": {
+      "label": "Community gallery",
+      "tiles": {
+        "q1": "Beginners welcome. Always.",
+        "q2": "More than one sport. More than just workouts.",
+        "q3": "We move so we grow. Together.",
+        "q4": "Matcha after the run. Conversations that linger.",
+        "q5": "No pressure. Just movement and connection.",
+        "q6": "Active deen. Strong women. Soft hearts."
+      }
+    },
+    "beginners": {
+      "eyebrow": "If you have never joined before",
+      "heading": "Beginners welcome",
+      "body": "You do not need to have run a marathon or summited a peak. Come as you are, at your pace. We are waiting."
+    }
+  },
   "Footer": {
     "tagline": "Movement · Connection · Sisterhood",
     "rights": "All rights reserved",
